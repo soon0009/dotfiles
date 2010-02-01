@@ -174,3 +174,11 @@ set smartcase
 " Tags
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
+" Custom
+:map <C-t> :execute 'NERDTreeToggle ' .getcwd()<CR>
+set nowrap
+:nmap <D-CR> :execute 'FufFile **/'<CR>
+:nmap <C-CR> :execute 'FufFile **/'<CR>
+" a leading space allows a recursive search 
+" let g:fuf_abbrevMap = { "^ " : [ "**/", ], } 
+
