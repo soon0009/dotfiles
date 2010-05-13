@@ -12,6 +12,9 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+set lines=46
+set columns=86
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
@@ -182,3 +185,4 @@ set nowrap
 " a leading space allows a recursive search 
 " let g:fuf_abbrevMap = { "^ " : [ "**/", ], } 
 
+set grepformat=%f:%l:%m

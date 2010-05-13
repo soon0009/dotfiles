@@ -8,7 +8,8 @@ end
 require 'irb/completion'
 
 # Prompt behavior
-ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+#ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+#ARGV.concat [ "--prompt-mode", "simple" ]
 
 # History
 require 'irb/ext/save-history'
