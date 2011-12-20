@@ -8,6 +8,7 @@
 	branch = auto
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [alias]
   c = commit -m
   a = add

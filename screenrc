@@ -67,6 +67,7 @@ terminfo              xterm-color     'AF=\E[3%p1%dm:AB=\E[4%p1%dm'
 # enables the behavior you'd expect, instead of losing the content that scrolls
 # out of the window.
 termcapinfo           linux           ti@:te@
+termcapinfo           xterm*          ti@:te@
 termcapinfo           xterm-color     ti@:te@
 
 # Use visual bell instead of audio bell.

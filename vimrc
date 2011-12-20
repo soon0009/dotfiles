@@ -2,6 +2,23 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'ack.vim'
+Bundle 'The-NERD-tree'
+Bundle 'rails.vim'
+Bundle 'Textile-for-VIM'
+Bundle 'vividchalk.vim'
+
+filetype plugin indent on
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -12,8 +29,9 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-set lines=46
-set columns=86
+if has("gui_running")
+  set lines=50 columns=140
+endif
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
