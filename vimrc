@@ -13,9 +13,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'ack.vim'
 Bundle 'The-NERD-tree'
-Bundle 'rails.vim'
 Bundle 'Textile-for-VIM'
 Bundle 'vividchalk.vim'
+Bundle 'Command-T'
 
 filetype plugin indent on
 
@@ -198,8 +198,10 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 " Custom
 :map <C-t> :execute 'NERDTreeToggle ' .getcwd()<CR>
 set nowrap
-:nmap <D-CR> :execute 'FufFile **/'<CR>
-:nmap <C-CR> :execute 'FufFile **/'<CR>
+" :nmap <D-CR> :execute 'FufFile **/'<CR>
+" :nmap <C-CR> :execute 'FufFile **/'<CR>
+:nmap <D-CR> :execute 'CommandT'<CR>
+:nmap <C-CR> :execute 'CommandT'<CR>
 " a leading space allows a recursive search 
 " let g:fuf_abbrevMap = { "^ " : [ "**/", ], } 
 
