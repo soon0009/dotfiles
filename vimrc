@@ -2,6 +2,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Pathogen
+call pathogen#infect('pathogen_bundle')
+
 " Vundle
 filetype off
 
@@ -16,8 +19,16 @@ Bundle 'The-NERD-tree'
 Bundle 'Textile-for-VIM'
 Bundle 'vividchalk.vim'
 Bundle 'Command-T'
+Bundle 'Align'
+Bundle 'Tabular'
 
 filetype plugin indent on
+
+set guifont=Source\ Code\ Pro\ Light:h14
+set antialias                     " MacVim: smooth fonts.
+set encoding=utf-8                " Use UTF-8 everywhere.
+set guioptions-=T                 " Hide toolbar.
+set background=light              " Background.
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -202,6 +213,7 @@ set nowrap
 " :nmap <C-CR> :execute 'FufFile **/'<CR>
 :nmap <D-CR> :execute 'CommandT'<CR>
 :nmap <C-CR> :execute 'CommandT'<CR>
+:nmap <F5> :CommandTFlush<CR>
 " a leading space allows a recursive search 
 " let g:fuf_abbrevMap = { "^ " : [ "**/", ], } 
 
