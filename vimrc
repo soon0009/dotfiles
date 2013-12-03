@@ -21,6 +21,8 @@ Bundle 'vividchalk.vim'
 Bundle 'Command-T'
 Bundle 'Align'
 Bundle 'Tabular'
+Bundle 'Solarized'
+"Bundle 'AutoClose'
 
 filetype plugin indent on
 
@@ -28,7 +30,7 @@ set guifont=Source\ Code\ Pro\ Light:h14
 set antialias                     " MacVim: smooth fonts.
 set encoding=utf-8                " Use UTF-8 everywhere.
 set guioptions-=T                 " Hide toolbar.
-set background=light              " Background.
+set background=dark              " Background.
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -182,9 +184,10 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme vividchalk
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+" colorscheme vividchalk
+" highlight NonText guibg=#060606
+" highlight Folded  guibg=#0A0A0A guifg=#9090D0
+colorscheme solarized
 
 " Numbers
 set number
@@ -218,3 +221,6 @@ set nowrap
 " let g:fuf_abbrevMap = { "^ " : [ "**/", ], } 
 
 set grepformat=%f:%l:%m
+
+" clear search
+:command C let @/=""
