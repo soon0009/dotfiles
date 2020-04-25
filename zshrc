@@ -1,10 +1,3 @@
-# completion
-autoload -U compinit
-compinit
-
-# automatically enter directories without cd
-setopt auto_cd
-
 # use vim as an editor
 export EDITOR=vim
 

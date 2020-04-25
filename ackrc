@@ -1,7 +1,0 @@
---type-add=js=.ejs
---type-add=ruby=.erb
---type-add=css=.sass,.scss
---type-add=ruby=.feature,.haml
---type-add=sql=.pkg,.pkb
---ignore-dir=tmp
---ignore-dir=log
