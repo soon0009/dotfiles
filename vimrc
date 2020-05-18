@@ -79,6 +79,10 @@ let g:html_indent_tags = 'li\|p'
 set splitbelow
 set splitright
 
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
