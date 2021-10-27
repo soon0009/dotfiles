@@ -1,5 +1,3 @@
-export PATH=/Applications/MacVim.app/Contents/bin:$PATH
-
 git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   if [[ -n $ref ]]; then
