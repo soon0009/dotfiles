@@ -23,6 +23,3 @@ setopt histignoredups
 
 # keep more history
 export HISTSIZE=200
-
-# rbenv
-eval "$(rbenv init -)"
